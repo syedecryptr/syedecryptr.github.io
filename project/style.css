@@ -1,0 +1,148 @@
+
+html { 
+        background: url('bcimg.jpeg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+
+input:focus{
+	outline:none;
+	text-align: center;
+}
+#title{
+    /*background-color:#eeeeee;*/
+    height:100px;
+    width:800px;
+    float:left ;
+    margin-bottom: 20px;
+    text-align: center;
+	font-family: 'Lucida Bright', Georgia, serif;
+	font-size: 72px;
+	font-style: normal;
+	color: #eeeeee;
+	text-align: left;
+	padding-left: 525px;
+	
+}
+
+#expression{
+	font-family: 'Lucida Bright', Georgia, serif;
+    /*background-color: lightgreen;*/
+    font-size: 25px;
+    height:100px;
+    float:left;
+    margin-bottom: 50px;
+    padding-top: 10px;
+   	color: #eeeeee;
+   	padding-left: 50px;
+
+}
+#vars{
+	margin-bottom: 10px;
+	/*background-color: #eeeeee;*/
+		width: 500;
+	color: #eeeeee;
+
+}
+#variables{
+	font-family: 'Lucida Bright', Georgia, serif;
+	float: right;
+	font-size: 22px;
+	border-radius:10px;
+	width: 100px;
+	background-color: transparent;
+	color: #eeeeee;
+
+}
+#submit{
+	position: relative;
+	top : -10px;
+	padding-left: 800px;
+}
+#inpsub{
+		font-family: 'Lucida Bright', Georgia, serif;
+		font-size: 22px;
+		border-radius:10px;
+		background-color: transparent;
+		color: #eeeeee;
+}
+#reset{
+	position: relative;
+	top : -45px;
+	margin-left: 1000px;
+		/*background-color: pink;/*comment this out*/
+		width: 100px;
+
+}
+#inpreset{
+		font-family: 'Lucida Bright', Georgia, serif;
+		font-size: 22px;
+		border-radius:10px;
+		background-color: transparent;
+		color: #eeeeee;
+}
+#sigma{
+	
+	float: right;
+	margin-right: 895px;
+	width: 50px;
+	/*background-color:blue;*/
+	color: #eeeeee;
+
+}
+#expr{
+	position: relative;
+	float: right;
+	/*background-color:lightblue;*/
+	height:50;
+    width:250px;
+	margin-right: 650px;
+	top : -28px;
+	color: #eeeeee;
+}
+#exp{
+		font-family: 'Lucida Bright', Georgia, serif;
+		font-size: 22px;
+		border-radius:10px;
+		width: 200px;
+		color: #eeeeee;
+ 		background-color: transparent;
+
+
+}
+#expo{
+	position: relative;
+	float: left;
+	top: -25px;
+}
+#i{
+		position: relative;
+		/*background-color:lightblue;*/
+		float: right;
+		color: #eeeeee;
+		width: 50;
+		margin-right: 0px;
+
+}
+#truthtable{
+	font-family: 'Lucida Bright', Georgia, serif;
+	height:300px;
+    width:500px;
+    float:left;
+   	color: #eeeeee;
+   	margin-right: 50px;
+   	margin-left: 150px;
+   	font-size: 22px;
+}
+
+#reducedexpression{
+	font-family: 'Lucida Bright', Georgia, serif;
+	height:300px;
+    width:500px;
+    float:left;
+    color: #eeeeee;
+    font-size: 22px;	
+}
