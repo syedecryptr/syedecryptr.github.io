@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- <audio  hidden="hidden" loop = "true" autoplay="autoplay">
+		  <source src="music.mp3" type="audio/mpeg">
+		  Your browser does not support the audio element.
+		</audio> -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		 <link href="elements.css" rel="stylesheet">
+
+		<title>
+			K map
+		</title>
+	</head>
+		<body >
+			<div id = "title">
+				K MAP  <div style="position : fixed; font-size: 20px; top:5; right:10px; ">By syed</div>
+				<div id="popup" onclick="div_show()" style="position : fixed; top:35px; right:25px; "><img src="mail.png" height="30px" width="35px"></div> 
+			</div> 
+			<div id = "expression">
+				<div id = "vars">
+					Enter number of Variables : 
+					<input id = "variables" type="text" >
+				</div>
+				<div id = "submit"> 
+					<input type = "submit" id = "inpsub" value = "Calculate">
+				</div>
+				<div id = "reset"> 
+					<input type = "submit" id = "inpreset" value = "Reset">
+				</div>
+				<div id = "expo">
+					Enter Exp. of Minterms: 
+					<div id = "sigma"> 
+						&#931;M(
+					</div> 
+					(seprated by space)
+					<div id = "expr">
+						<input id = "exp" type="text" >
+						<div id = "i">
+							)
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id = "truthtable">
+				
+			</div>
+			<div id = "reducedexpression">
+				
+			</div>
+
+			<div id="abc">
+				<div id="popupContact">
+					<form action="mail.php" id="form" method="post" name="form">
+						<img  id="close" src="3.png" onclick ="div_hide()">
+						 <h2>Contact Me</h2>
+						<hr>
+						<input class = "inputstype" id="name" name="formname" placeholder="Name" type="text">
+						<input class = "inputstype" id="email" name="formemail" placeholder="Email" type="text">
+						<textarea id="msg" name="formmessage" placeholder="Message"></textarea>
+						<a href="javascript:%20check_empty()" name="formsubmit" id="submitform">Send</a>
+					</form>
+				</div>
+			</div>
+
+			<script src="javascript.js"></script>
+			<script src="my_js.js"></script>
+
+
+		</body>
+
+
+</html>
