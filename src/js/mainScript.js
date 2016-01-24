@@ -14,13 +14,17 @@ var dftChart5  = document.getElementById("mychart5");
 var dftChart6  = document.getElementById("mychart6");
 var dftChart7  = document.getElementById("mychart7");
 var dftChart8  = document.getElementById("mychart8");
-var progressdft = document.getElementById("progressdft")
-var progressidft = document.getElementById("progressidft")
+var progressdft = document.getElementById("progressdft");
+var progressidft = document.getElementById("progressidft");
+var dftrand = document.getElementById("dftrandom");
+var idftrand = document.getElementById("idftrandom");
 
 dftbutton.onclick = function() {dft()};
 idftbutton.onclick = function() {idft()};
 dftreset.onclick = function() {dodftreset()};
 idftreset.onclick = function() {doidftreset()};
+dftrand.onclick = function(){randomdft()};
+idftrand.onclick = function(){randomidft()};
 
 
 function dft()
@@ -191,7 +195,8 @@ function dft()
 
  }
 
-function dodftreset(){
+function dodftreset()
+ {
 	progressdft.style.width = "1%";
 	graphsdft.innerHTML = "";
 	dftChart1.style.display = 'none';
@@ -200,7 +205,8 @@ function dodftreset(){
 	dftChart4.style.display = 'none';
 	dftexp.value = "";}
 
-function idft(){
+function idft()
+ {
 		progressidft.style.width = "20%"	;
  		graphsidft.innerHTML = "";
  		var idftstring = idftexp.value;
@@ -365,11 +371,52 @@ function idft(){
 		Plotly.newPlot('mychart8', data4, layout4);
 		progressidft.style.width = "100%";}
 
-function doidftreset(){
+function doidftreset()
+ {
 	progressidft.style.width = "1%";
 	graphsidft.innerHTML = "";
 	dftChart5.style.display = 'none';
 	dftChart6.style.display = 'none';
 	dftChart7.style.display = 'none';
 	dftChart8.style.display = 'none';
-	idftexp.value = "";}
+	idftexp.value = "";
+ }
+
+function randomdft()
+ {
+ 	var randlen = Math.floor((Math.random() * 100) + 1);
+ 	var randstr = [];
+ 	for (var i = 0; i < randlen; i++){
+ 		var a = (Math.random() * 100 + 1).toFixed(2);
+		var numStr = a.toString() + " ";
+		randstr.push(numStr);
+	}
+		var a = (Math.random() * 100 + 1).toFixed(2).toString();
+		randstr.push(a);
+		dftexp.value = randstr.toString().split(",").join("");
+		dft();
+
+ }
+
+function randomidft()
+ {
+ 	var randlen = Math.floor((Math.random() * 100) + 1);
+ 	var randstr = [];
+ 	var ch = ""
+ 	for (var i = 0; i < randlen; i++){
+ 		var a = (Math.random() * 100 + 1).toFixed(2);
+ 		var b = (Math.random() * 100 + 1).toFixed(2);
+ 		if(b<0) ch = "-"
+ 		else ch = "+"
+		var numStr = a.toString() + ch + b.toString() + "i" + " ";
+		randstr.push(numStr);
+	}
+ 		var a = (Math.random() * 100 + 1).toFixed(2).toString();
+ 		var b = (Math.random() * 100 + 1).toFixed(2);
+ 		if(b<0) ch = "-"
+ 		else ch = "+"
+ 		var numStr = a.toString() + ch + b.toString() + "i";
+ 			randstr.push(numStr);
+		idftexp.value = randstr.toString().split(",").join("");
+		idft();
+ }
