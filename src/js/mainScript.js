@@ -192,7 +192,7 @@ function dft()
  }
 
 function dodftreset(){
-	progressidft.style.width = "1%";
+	progressdft.style.width = "1%";
 	graphsdft.innerHTML = "";
 	dftChart1.style.display = 'none';
 	dftChart2.style.display = 'none';
