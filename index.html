@@ -185,7 +185,18 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-           
+                <div class="container" id="comments">
+          <script src="https://apis.google.com/js/plusone.js"></script>
+                <div id="comments"></div>
+            <script>
+                gapi.comments.render('comments', {
+                href: window.location,
+                width: '624',
+                first_party_property: 'BLOGGER',
+                view_type: 'FILTERED_POSTMOD'
+                });
+            </script>
+      </div>
           </div>
           <div class="col-sm-6">
             <p class="text-info text-right">
@@ -202,20 +213,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <footer class="section section-primary">
-      <div class="container" id="comments">
-          <script src="https://apis.google.com/js/plusone.js"></script>
-                <div id="comments"></div>
-            <script>
-                gapi.comments.render('comments', {
-                href: window.location,
-                width: '624',
-                first_party_property: 'BLOGGER',
-                view_type: 'FILTERED_POSTMOD'
-                });
-            </script>
       </div>
     </footer>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
