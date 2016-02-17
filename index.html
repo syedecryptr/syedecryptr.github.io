@@ -2,6 +2,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="image.css" rel="stylesheet" type="text/css">
     </head><body>
@@ -25,12 +26,34 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#foot">Contacts</a>
+                            <a href="#myModal" data-toggle="modal">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">I'd Love to Hear From You</h3>
+      </div>
+      <div>
+        <form class="form-horizontal col-sm-12" action="//formspree.io/ug201311036@gmail.com" method="POST">
+          <div class = "form-group col-sm-12"></div>
+          <div class="form-group  col-sm-12"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group col-sm-12"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group col-sm-12"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that  can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group col-sm-12"><button type="submit" class="btn btn-success pull-right">Send It!</button></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -103,7 +126,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h2><a href="http://syedecryptr.github.io/kmap/index.html">
+                        <h2><a href="http://syedecryptr.github.io/kmap/index.html" target="_blank">
                             Karnaugh Map Solver&nbsp;
                         </a></h2>
                         <p class="lead">A web application using
@@ -115,7 +138,7 @@
                             <a href="https://en.wikipedia.org/wiki/Petrick%27s_method" target="_blank">Petric's method </a>.</p>
                     </div>
                     <div class="col-md-6">
-                        <h2><a href="https://github.com/syedecryptr/2048-python">
+                        <h2><a href="https://github.com/syedecryptr/2048-python" target="_blank">
                             2048 Game
                         </a></h2>
                         <p class="lead">A fully functional famous 2048 game adding advance features like dynamic
@@ -217,6 +240,7 @@
         </footer>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body></html>
