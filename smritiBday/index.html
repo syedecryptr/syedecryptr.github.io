@@ -5,6 +5,28 @@
        <!--  <link href="style.css" rel="stylesheet"> -->
     </head>
     <body>
-    <img src="img.jpg" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+    <img id = "rand" src="img.jpg" style="width:0%;height:0%;position:absolute;top:0;left:0;z-index:-5000;">
+    <script>
+                var txt;
+                var person = prompt("GUESS MY NAME !! AND GET YOUR GIFT!");
+                if (person == null || person == "") {
+                    txt = "WHY CANCEL :(";
+                    alert(txt)
+                }
+                 person = person.toLowerCase()
+
+                 if(person == "syed") {
+                    var i = document.getElementById("rand");
+                    i.style.width = "100%";
+                    i.style.height = "100%";
+                }   
+                else {
+                    person = person.toUpperCase()
+                    alert("NO I AM NOT "+person+ ", TRY AGAIN!!!!")
+                    location.reload()
+                }
+    </script>
     </body>
+
+
 </html>
