@@ -454,8 +454,8 @@ for (var r=0; r<11; r++){
         }));
 
 	    col = windowToMargin(c)
-	    // zeroBall(row,col,'P2', r, c)
-	    createRandomBoard(r, c, row, col)
+	    zeroBall(row,col,'P2', r, c)
+// 	    createRandomBoard(r, c, row, col)
 	 //    if((r==0 && c==0) || (r==0 && c==6) || (r==10 && c==0) || (r==10 && c==6)){
 	 //    	zeroBall(row,col,'P4', r, c)
 	 //    }
