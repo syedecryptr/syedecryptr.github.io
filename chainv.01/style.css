@@ -1,0 +1,781 @@
+     /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+ /* Extra small devices (phones, 600px and down) */
+.inset{
+border-style: 18px  inset  #d2e3ed
+}
+@media only screen and (max-width: 600px) {
+    .grid { 
+      margin: 1em auto;
+      border-collapse: collapse;
+      z-index: 100;
+      position: absolute;
+      left: 9%;
+      width: 83%;
+      top: 1%;
+    }
+    .grid td {
+        cursor:pointer;
+        width:30px; height:33px;
+        border:1px solid #aaa9e2ba;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+ 
+    .ballP1 {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      background: #4b0ee87d;
+      border-radius: 50%;
+      border: 1px solid #18e0eeb0;
+    }
+    .ballP2 {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      background: #410ee8c9;
+      border-radius: 50%;
+      border: 1px solid #a497d4f2;
+    }
+    .ballP3 {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      background: #3fdbca;
+      border-radius: 50%;
+      border: 1px solid #63f5e0cc;
+    }
+    .ballP4 {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      background: #ef649f;
+      border-radius: 50%;
+      border: 1px solid #bf487b;
+    }
+    .ballP5 {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+/*      background: #ef649f;
+*/      border-radius: 50%;
+      border: 1px solid #1a31cbe6;
+    }
+    .ball-1 {
+      left: 2px;
+      top: -4px;
+      transform-origin: 28.125px 28.125px;
+      animation: ball1 2s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-2 {
+      left: -6.75px;
+      top: -7px;
+      transform-origin: 1.875px 28.125px;
+      animation: ball2 1.75s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-3 {
+      left: -5.5px;
+      top: -2.75px;
+      transform-origin: 1.875px 1.875px;
+      animation: ball3 2.25s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .margin-row-top{
+      margin-top: 38px;
+    }
+    .padding-row-top{
+      top: 40px;  
+      padding-left: 7%;
+      padding-top: 36px;
+    }
+        .ball-right {
+        animation: ball-right-600m 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-left {
+        animation: ball-left-600m 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-top  {
+        animation: ball-top-600m 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-down  {
+        animation: ball-down-600m 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;  
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .grid { 
+      margin: 1em auto;
+      border-collapse: collapse;
+      z-index: 100;
+      position: absolute;
+      left: 9%;
+      width: 80%;
+      top: 2%;
+    }
+    .grid td {
+        cursor:pointer;
+        width:30px; height:37px;
+        border:1px solid #aaa9e2ba;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+ 
+    .ballP1 {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      background: #4b0ee87d;
+      border-radius: 50%;
+      border: 1px solid #18e0eeb0;
+    }
+    .ballP2 {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      background: #410ee8c9;
+      border-radius: 50%;
+      border: 1px solid #a497d4f2;
+    }
+    .ballP3 {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      background: #3fdbca;
+      border-radius: 50%;
+      border: 1px solid #63f5e0cc;
+    }
+    .ballP4 {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      background: #ef649f;
+      border-radius: 50%;
+      border: 1px solid #bf487b;
+    }
+    .ballP5 {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+/*      background: #ef649f;
+*/      border-radius: 50%;
+      border: 1px solid #1a31cbe6;
+    }
+    .ball-1 {
+      left: 2px;
+      top: -4px;
+      transform-origin: 28.125px 28.125px;
+      animation: ball1 2s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-2 {
+      left: -6.75px;
+      top: -7px;
+      transform-origin: 1.875px 28.125px;
+      animation: ball2 1.75s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-3 {
+      left: -5.5px;
+      top: -2.75px;
+      transform-origin: 1.875px 1.875px;
+      animation: ball3 2.25s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .margin-row-top{
+      margin-top: 38px;
+    }
+    .padding-row-top{
+      top: 40px;  
+      padding-top: 40px;
+      padding-left: 7%;
+    }
+    .ball-right {
+        animation: ball-right-600 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-left {
+        animation: ball-left-600 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-top  {
+        animation: ball-top-600 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-down  {
+        animation: ball-down-600 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;  
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid { 
+      margin: 1em auto;
+      border-collapse: collapse;
+      z-index: 100;
+      position: absolute;
+      left: 16%;
+      width: 63%;
+      top: 2%;
+    }
+    .grid td {
+        cursor:pointer;
+        width:30px; height:41px;
+        border:1px solid #aaa9e2ba;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+ 
+    .ballP1 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #4b0ee87d;
+      border-radius: 50%;
+      border: 1px solid #18e0eeb0;
+    }
+    .ballP2 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #410ee8c9;
+      border-radius: 50%;
+      border: 1px solid #a497d4f2;
+    }
+    .ballP3 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #3fdbca;
+      border-radius: 50%;
+      border: 1px solid #63f5e0cc;
+    }
+    .ballP4 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #ef649f;
+      border-radius: 50%;
+      border: 1px solid #bf487b;
+    }
+    .ballP5 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+/*      background: #ef649f;
+*/      border-radius: 50%;
+      border: 1px solid #1a31cbe6;
+    }
+    .ball-1 {
+      left: 2px;
+      top: -4px;
+      transform-origin: 28.125px 28.125px;
+      animation: ball1 2s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-2 {
+      left: -6.75px;
+      top: -7px;
+      transform-origin: 1.875px 28.125px;
+      animation: ball2 1.75s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-3 {
+      left: -5.5px;
+      top: -2.75px;
+      transform-origin: 1.875px 1.875px;
+      animation: ball3 2.25s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .margin-row-top{
+      margin-top: 38px;
+    }
+    .padding-row-top{
+      top: 40px;  
+      padding-top: 44px;
+      padding-left: 15%;
+    }
+      .ball-right {
+        animation: ball-right-768 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-left {
+        animation: ball-left-768 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-top  {
+        animation: ball-top-768 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-down  {
+        animation: ball-down-768 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;  
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid { 
+      margin: 1em auto;
+      border-collapse: collapse;
+      z-index: 100;
+      position: absolute;
+      left: 25%;
+      width: 42%;
+      top: 2%;
+    }
+    .grid td {
+        cursor:pointer;
+        width:30px; height:43px;
+        border:1px solid #aaa9e2ba;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+    
+    .ballP1 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #4b0ee87d;
+      border-radius: 50%;
+      border: 1px solid #18e0eeb0;
+    }
+    .ballP2 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #410ee8c9;
+      border-radius: 50%;
+      border: 1px solid #a497d4f2;
+    }
+    .ballP3 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #3fdbca;
+      border-radius: 50%;
+      border: 1px solid #63f5e0cc;
+    }
+    .ballP4 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #ef649f;
+      border-radius: 50%;
+      border: 1px solid #bf487b;
+    }
+    .ballP5 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+/*      background: #ef649f;
+*/      border-radius: 50%;
+      border: 1px solid #1a31cbe6;
+    }
+    .ball-1 {
+      left: 5px;
+      top: -7px;
+      transform-origin: 28.125px 28.125px;
+      animation: ball1 2s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-2 {
+      left: -7.75px;
+      top: -7px;
+      transform-origin: 1.875px 28.125px;
+      animation: ball2 1.75s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-3 {
+      left: -0.5px;
+      top: 2.25px;
+      transform-origin: 1.875px 1.875px;
+      animation: ball3 2.25s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .margin-row-top{
+      margin-top: 38px;
+    }
+    .padding-row-top{
+      top: 40px;  
+      padding-top: 45px;
+      padding-left: 23%;
+    }
+        .ball-right {
+        animation: ball-right-992 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-left {
+        animation: ball-left-992 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-top  {
+        animation: ball-top-992 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-down  {
+        animation: ball-down-992 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;  
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .grid { 
+      margin: 1em auto;
+      border-collapse: collapse;
+      z-index: 100;
+      position: absolute;
+      left: 26%;
+      width: 41%;
+      top: 1%;
+    }
+    .grid td {
+        cursor:pointer;
+        width:30px; height:42px;
+        border:1px solid #aaa9e2ba;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+ 
+ 
+    .ballP1 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #4b0ee87d;
+      border-radius: 50%;
+      border: 1px solid #18e0eeb0;
+    }
+    .ballP2 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #410ee8c9;
+      border-radius: 50%;
+      border: 1px solid #a497d4f2;
+    }
+    .ballP3 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #3fdbca;
+      border-radius: 50%;
+      border: 1px solid #63f5e0cc;
+    }
+    .ballP4 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      background: #ef649f;
+      border-radius: 50%;
+      border: 1px solid #bf487b;
+    }
+    .ballP5 {
+      height: 13px;
+      width: 13px;
+      position: absolute;
+/*      background: #ef649f;
+*/      border-radius: 50%;
+      border: 1px solid #1a31cbe6;
+    }
+    .ball-1 {
+      left: 2px;
+      top: -14px;
+      transform-origin: 28.125px 28.125px;
+      animation: ball1 2s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-2 {
+      left: 10.25px;
+      top: -15px;
+      transform-origin: 1.875px 28.125px;
+      animation: ball2 1.75s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .ball-3 {
+      left: 4.5px;
+      top: -7.75px;
+      transform-origin: 1.875px 1.875px;
+      animation: ball3 2.25s infinite cubic-bezier(0.4, 0, 1, 1);
+    }
+    .margin-row-top{
+      margin-top: 42px;
+    }
+    .padding-row-top{
+      top: 40px;  
+      padding-left: 23%;
+    }
+
+    .ball-right {
+        animation: ball-right-1200 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-left {
+        animation: ball-left-1200 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-top  {
+        animation: ball-top-1200 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;
+    }
+    .ball-down  {
+        animation: ball-down-1200 1s 1 cubic-bezier(0.18, 0.89, 0.29, 1.14);
+        animation-fill-mode: forwards;  
+    }
+
+} 
+
+.rotator{
+    -webkit-animation: rotation infinite;
+     animation-duration: 2s;
+     animation-timing-function: cubic-bezier(0.72, 0.01, 0.32, 0.97);
+}
+.spinner {
+    position: absolute;
+    animation: spinner 3s infinite cubic-bezier(0.4, 0, 1, 1);
+/* */    animation-duration: 35s;
+    animation-iteration-count: infinite;
+
+}
+.spawn  {
+    animation: spawn 2s 1 cubic-bezier(0, 0, 0.95, 0.74);
+    animation-fill-mode: forwards;  
+}
+@keyframes spinner {
+  37.5% {
+    transform: rotate(360deg);
+  
+    transform: scale(1.1, 1.1);
+    }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes ball1 {
+  37.5% {
+    transform: scale(1.2, 1.2);
+    }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes ball2 {
+  37.5% {
+    transform: scale(1.2, 1.2);
+    }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes ball3 {
+
+  37.5% {
+    transform: scale(1.2, 1.2);
+    }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-8deg);
+        /* left: 100%; */
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        /* left: 100%; */
+    }
+    75% {
+        -webkit-transform: rotate(2deg);
+        /* left: 100%; */
+    }
+     100% {
+        -webkit-transform: rotate(0deg);
+        /* left: 100%; */
+    }
+}
+@keyframes ball-right-1200 {
+
+     100% {
+        left:80px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-left-1200 {
+
+     100% {
+        left:-80px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-top-1200{
+
+     100% {
+        top:-60px;
+        opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-down-1200{
+
+     100% {
+        top:30px;
+      opacity:0.1;         /* left: 100%; */
+  }
+}
+@keyframes ball-right-600m {
+
+     100% {
+        left:40px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-left-600m {
+
+     100% {
+        left:-40px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-top-600m{
+
+     100% {
+        top:-40px;
+        opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-down-600m{
+
+     100% {
+        top:30px;
+      opacity:0.1;         /* left: 100%; */
+  }
+}
+@keyframes ball-right-600 {
+
+     100% {
+        left:70px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-left-600 {
+
+     100% {
+        left:-70px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-top-600{
+
+     100% {
+        top:-50px;
+        opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-down-600{
+
+     100% {
+        top:40px;
+      opacity:0.1;         /* left: 100%; */
+  }
+}
+@keyframes ball-right-768 {
+
+     100% {
+        left:70px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-left-992{
+
+     100% {
+        left:-70px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-top-992{
+
+     100% {
+        top:-50px;
+        opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-down-992{
+
+     100% {
+        top:40px;
+      opacity:0.1;         /* left: 100%; */
+  }
+}
+@keyframes ball-right-992 {
+
+     100% {
+        left:60px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-left-992 {
+
+     100% {
+        left:-70px;
+         opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-top-992{
+
+     100% {
+        top:-50px;
+        opacity:0.3; 
+        /* left: 100%; */
+    }
+}
+@keyframes ball-down-992{
+
+     100% {
+        top:40px;
+      opacity:0.1;         /* left: 100%; */
+  }
+}
+
+@keyframes spawn{
+    0%{
+      opacity: 0;
+    }
+     100% {
+        opacity: 1;
+        /* left: 100%; */
+    }
+    }
+}
